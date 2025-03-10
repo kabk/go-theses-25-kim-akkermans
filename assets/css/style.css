@@ -380,7 +380,7 @@ a:hover {
 
 h1 {
   font-family: 'Fungal';
-  font-weight: normal; /* Ensures no extra thickness */
+  font-weight: 400; /* Try using 400 (regular) or lighter weight */
   color: #710303;
   font-size: 220px;
   text-align: center;
@@ -508,130 +508,177 @@ summary{
 
 
 
-
-
 /* WEBSITE MEDIA QUERIES */
 
 /* responsive typeface for various breaking points, sets the default 'rem' value */
-@media (max-width: 299px) { :root{--font-size: 18px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 299px) and (max-width: 340px) { :root{--font-size: 19px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 340px) and (max-width: 440px) { :root{--font-size: 20px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 441px) and (max-width: 779px) { :root{--font-size: 19px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 780px) and (max-width: 992px) { :root{--font-size: 20px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 993px) and (max-width: 1200px) { :root{--font-size: 21px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 1201px) and (max-width: 1320px) { :root{--font-size: 22px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 1321px) { :root{--font-size: 24px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (max-width: 299px) { 
+  :root {
+    --font-size: 18px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
 
-/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
-/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
+@media (min-width: 299px) and (max-width: 340px) { 
+  :root {
+    --font-size: 19px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
 
-@media (max-width: 779px) {
+@media (min-width: 340px) and (max-width: 440px) { 
+  :root {
+    --font-size: 20px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
 
-  /* your 'mobile' overriding css properties here */
+@media (min-width: 441px) and (max-width: 779px) { 
+  :root {
+    --font-size: 19px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
 
-  
+@media (min-width: 780px) and (max-width: 992px) { 
+  :root {
+    --font-size: 20px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) { 
+  :root {
+    --font-size: 21px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1320px) { 
+  :root {
+    --font-size: 22px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
+
+@media (min-width: 1321px) { 
+  :root {
+    --font-size: 24px;
+  }
+  html, body {
+    font: var(--font-size) var(--font-text);
+  }
+}
+
 /* Mobile-specific h1 styling */
 @media (max-width: 779px) {
-
   h1 {
     font-size: 45px; /* Example smaller font size for mobile */
     margin-left: -40px; /* Adjust margin for mobile */
     margin-top: 10px; /* Adjust top margin */
     transition: transform 0.4s ease-in-out, color 0.4s;
   }
-}
+
   html, body {
-  overflow-x: hidden;  /* Prevent horizontal scrolling */
-  overflow-y: auto;    /* Allow vertical scrolling */
-}
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    overflow-y: auto;    /* Allow vertical scrolling */
+  }
+
   h1:hover {
     transform: translateX(20px) rotate(-3deg);
-    color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
   }
   
-  h2{
-  font-family: 'Junicode', italic;
-  width:110%;
-  font-size:30px;
-  font-weight: normal;
-  color: rgb(124, 0, 0);
+  h2 {
+    font-family: 'Junicode', italic;
+    width: 110%;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(124, 0, 0);
   }
 
   .landing-subheader {
-    margin: 0 auto;  /* Center the section on the page */
-    width: 80%;  /* Ensure the section takes up the full width */
-    text-align: center; /* Center the content inside the section */
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
     padding-top: 200px;
     height: 100vh;
   }
 
   .quote {
     font-family: 'Junicode', italic;
-    font-style: italic; /* Make the text italic */
-    font-size: 35px;  /* Adjust font size if needed */
-    color: #710303;  /* Adjust the color of the quote text */
-    text-align: center;  /* Center the quote */
+    font-style: italic;
+    font-size: 35px;
+    color: #710303;
+    text-align: center;
     line-height: 1.2;
-    padding-top: 600px; /* Adjust the value to move the quote down */
+    padding-top: 600px;
     transition: all 0.3s ease-in-out;
   }
 
   #special-image-quote {
-    width: 90%; /* Adjust to take up more space on mobile */
+    width: 90%;
   }
 
-  /* Ensure the caption is centered on mobile as well */
   #special-image-quote + figcaption {
     text-align: center;
   }
 
-  /* Remove any unnecessary margins for mobile */
   #special-image-quote + figcaption p {
-    margin-left: 0; /* Ensure there's no left margin */
+    margin-left: 0;
   }
 
-  figcaption, 
-figcaption p, 
-figcaption em, 
-figcaption a {
-  font-family: 'Junicode', italic;
-  font-size: 12px; 
-  width:90%;
-  text-align: justify;
+  figcaption,
+  figcaption p,
+  figcaption em,
+  figcaption a {
+    font-family: 'Junicode', italic;
+    font-size: 12px;
+    width: 90%;
+    text-align: justify;
+  }
 
-}
+  .top-right-nav a {
+    font-family: 'Junicode', italic;
+    text-decoration: none;
+    color: #710303;
+    font-size: 15px;
+  }
 
-.top-right-nav a {
-  font-family: 'Junicode', italic;
-  text-decoration: none; /* Remove underline */
-  color: #710303; /* Change link color */
-  font-size: 15px; /* Adjust font size */
-}
+  summary {
+    font-weight: bold;
+    color: rgb(124, 0, 0);
+    font-size: 15px;
+    text-align: left;
+    width: 25%;
+    padding: 1rem;
+    box-sizing: border-box;
+    list-style: none;
+    padding-left: 20px;
+  }
 
-summary {
-  font-weight: bold;
-  color: rgb(124, 0, 0);
-  font-size: 15px;
-  text-align: left;
-  width: 25%;
-  padding: 1rem;
-  box-sizing: border-box;
-  
-  /* Hide the default arrow */
-  list-style: none;
-  padding-left: 20px; /* Optional: Space for the finger symbol */
-}
+  summary::before {
+    content: "☞";
+    margin-right: 10px;
+    font-size: 20px;
+  }
 
-summary::before {
-  content: "☞"; /* Unicode for pointing finger */
-  margin-right: 10px; /* Space between the symbol and text */
-  font-size: 20px; /* Adjust the symbol size */
-}
-
-/* When the details are open, you can change it to another finger or symbol */
-details[open] summary::before {
-  content: "☟"; /* Another finger pointing upwards */
-}
+  details[open] summary::before {
+    content: "☟";
+  }
 
   #chapter-3 {
     color: #710303;
@@ -643,93 +690,68 @@ details[open] summary::before {
     text-align: left;
     font-size: 30px;
     line-height: 1.2;
-    white-space: nowrap;  /* Prevent line breaks */
+    white-space: nowrap;
   }
-  
-  
+
   #chapter-3:hover {
-    color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
     text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
   }
 
-h3 {
-  font-family: 'Junicode', italic;
-  width: 100%; /* Full width to prevent wrapping */
-  font-size: 15px; /* Keep the font readable */
-  white-space: nowrap; /* Prevent line breaks */
-  overflow: hidden; /* Hide overflow text if necessary */
-  text-overflow: ellipsis; /* Add "..." if text is too long */
-}
-
-section.is-chapter{
-  width:100%;
-  padding-right:0%;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-div.is-chapter-text{
-  width:100%;
-}
-
-figure{
-  width:100%;
-  float:left;
-  margin:0;
-}
-
-figure img{
-  margin:0;
-}
-
-figure img:hover {
-  filter: none;
-}
-
-
-
-  /* utility classes, mobile */
-
-  .desktop-only{
-    display:none;
+  h3 {
+    font-family: 'Junicode', italic;
+    width: 100%;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .mobile-only{
-    display:block;
+  section.is-chapter {
+    width: 100%;
+    padding-right: 0%;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 
+  div.is-chapter-text {
+    width: 100%;
+  }
+
+  figure {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+
+  figure img {
+    margin: 0;
+  }
+
+  figure img:hover {
+    filter: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
 }
 
-
-
-/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
-
+/* Optional styles for smaller smartphone screens */
 @media (max-width: 339px) {
-
-  /* your overriding css properties here */
-
+  /* Your additional CSS properties for smaller screens */
 }
 
-
-
-/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-
+/* Optional styles for mobile landscape */
 @media (max-width: 779px) and (orientation: landscape) {
-
-   /* your overriding css properties here */
-
+  /* Your overriding CSS properties for landscape mode */
 }
 
-
-
-/* use this query to apply style for 'small' desktop screens */
-
+/* Optional styles for small desktop screens */
 @media (min-width: 780px) and (max-width: 992px) {
-
-  /* your overriding css properties here */
-
+  /* Your overriding CSS properties for small desktops */
 }
-
-
-
-
