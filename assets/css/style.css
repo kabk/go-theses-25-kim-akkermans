@@ -10,9 +10,11 @@
   to generate your own font for the web from .ttf or .oft files 
 */
 
+
+
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-roman.woff2');
+    font-family: 'Junicode';
+    src: url('assets/fonts/junicode/Junicode.woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -28,20 +30,23 @@
 
 
 
+
 /* VARIABLES */
 
 :root {
   /* Color values */
-  --color-background: rgba(255,255,255,1);
-  --color-text: rgba(0,0,0,1);
-  --color-text-link: rgba(0,0,255,0.8);
-  --color-text-link-hover: rgba(0,0,255,0.4);
+  --color-background: rgba(255, 255, 255, 1); /* Background color */
+  --color-text: rgba(0, 0, 0, 1); /* Text color */
+  --color-text-link: rgba(113, 83, 83, 1); /* Text color for links */
+  --color-text-link-hover: rgb(149, 0, 0); /* Hover color for links */
+
   /* Font values */
-  --font-text: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
-  --font-size: 24px;
+  --font-text: 'Junicode'; /* Set your desired font family here */
+
   /* Margin value */
-  --margin: 1rem;
+  --margin: 2rem; /* Default margin */
 }
+
 
 
 
@@ -51,21 +56,298 @@ html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
+  margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ensures no horizontal scrolling */
+}
+
+header{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.landing-content{
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  margin-top:10vh;
+}
+
+.landing-subheader {
+  margin: 0 auto;  /* Center the section on the page */
+  width: 80%;  /* Ensure the section takes up the full width */
+  text-align: center; /* Center the content inside the section */
+  padding-top: 200px;
+  height: 100vh;
+}
+
+#chapter-1 {
+  margin-left: -20px; /* Adjust the value as necessary */
+  clear: both; /* Ensures the title breaks cleanly above the text */
+  text-align: left; /* Ensures the title aligns to the left */
+  font-size: 15px; /* You can adjust the size as needed */
+  font-weight: bold; /* Optional, if you want the title to stand out more */
+  line-height: 1.5; /* Adjust line height for readability */
+  word-break: break-word; /* Break words if they're too long */
+}
+
+#chapter-2 {
+  margin-left: -20px; /* Adjust the value as necessary */
+  clear: both; /* Ensures the title breaks cleanly above the text */
+  text-align: left; /* Ensures the title aligns to the left */
+  font-size: 15px; /* You can adjust the size as needed */
+  font-weight: bold; /* Optional, if you want the title to stand out more */
+  line-height: 1.5; /* Adjust line height for readability */
+  word-break: break-word; /* Break words if they're too long */
+}
+
+#chapter-3 {
+  color: #710303;
+  font-family: 'Pinyon Script', cursive;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-top: 500px;  /* Adjust this value to move the title down */
+  text-align: left;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+
+#chapter-3:hover {
+  color:rgb(255, 0, 0);
+  text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+}
+
+
+
+.quote {
+  font-style: italic; /* Make the text italic */
+  font-size: 70px;  /* Adjust font size if needed */
+  color: #710303;  /* Adjust the color of the quote text */
+  text-align: center;  /* Center the quote */
+  line-height: 1.2;
+  padding-top: 600px; /* Adjust the value to move the quote down */
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Styling for the entire quote section */
+.quote-section {
+  margin: 0 auto;  /* Center the section on the page */
+  width:70%;  /* Ensure the section takes up the full width */
+  text-align: center; /* Center the content inside the section */
+  height: 270vh;
+}
+
+.top-text {
+  color: #710303;
+  font-size: 12px;  /* Set font size to make it small */
+  text-transform: lowercase; /* Ensure all text is lowercase */
+  text-align: center;  /* Align text across the page */
+  padding: 10px 0;  /* Add padding for spacing */
+  background-color: #ffffff;  /* Optional background color for visibility */
+  width: 100%;  /* Make it take up the full width of the page */
+  position: fixed;  /* Fix it to the top of the page */
+  top: 0;  /* Stick it at the very top */
+  left: 0;  /* Align it to the left edge of the page */
+  z-index: 999;  /* Make sure it's on top of other content */
+}
+
+.top-text span {
+  margin: 0 15px;  /* Space between each piece of text */
+}
+
+.top-right-nav {
+  
+  top: 0;
+  left: 0; /* Positions it at the left edge */
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: left;
+
+} 
+
+.top-right-nav ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.top-right-nav li {
+  margin-top: 20px;
+  margin-bottom: 10px; /* Add space between list items */
+  word-break: break-word; /* Break words if they're too long */
+}
+
+.top-right-nav a {
+  text-decoration: none; /* Remove underline */
+  color: #710303; /* Change link color */
+  font-size: 15px; /* Adjust font size */
+}
+
+.top-right-nav a:hover {
+  color: rgb(255, 0, 0); /* Change link color on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+.styled-image {
+  width: 50%; /* Make the image take up 50% of its container */
+  max-width: 300px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  float: left; /* Make the image float to the left */
+  margin-right: 15px; /* Add some space to the right of the image */
+  margin-bottom: 10px; /* Add some space below the image */
 }
 
 body {
   position:relative;
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
-  color: var(--color-text);
+  color: rgb(113, 83, 83);
   width:100%;
   height:auto;
   overflow-y:auto;
+  margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    cursor: url('assets/images/BDM-singing.png'), auto;
+   
+
 }
+
+p {
+  color: rgb(124, 0, 0);
+  font-family: 'Junicode', cursive;
+  font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
+  line-height: 1.4; /* Optionally adjust line spacing for readability */
+  text-align: left; /* Make sure text aligns left within the paragraph */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+summary {
+  font-weight: bold;
+  color: rgb(124, 0, 0);
+  font-size: 15px;
+  text-align: left;
+  width: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+  
+  /* Hide the default arrow */
+  list-style: none;
+  padding-left: 20px; /* Optional: Space for the finger symbol */
+}
+
+summary::before {
+  content: "☞"; /* Unicode for pointing finger */
+  margin-right: 10px; /* Space between the symbol and text */
+  font-size: 20px; /* Adjust the symbol size */
+}
+
+/* When the details are open, you can change it to another finger or symbol */
+details[open] summary::before {
+  content: "☟"; /* Another finger pointing upwards */
+}
+
+
+figure {
+  position: relative;
+  float: right;
+  width: 25vw;
+  margin: 0;
+  padding: 0;
+  margin-right: -30vw;
+  margin-top: -10px;  /* Move the figure (and image) up */
+}
+
+figure img {
+  width: 80%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  margin-top: -250px;  /* Move the image up */
+  object-fit: cover; /* Ensures the image covers the full area without distortion */
+}
+
+
+
+figcaption, 
+figcaption p, 
+figcaption em, 
+figcaption a {
+  font-size: 12px; 
+  width:90%;
+  text-align: justify;
+
+}
+
+#special-image {
+  width: 100%; /* Adjust the width to 100% of the container */
+  height: auto; /* Keep the aspect ratio intact */
+  box-shadow: 0 4px 8px rgba(73, 36, 36, 0.2); /* Add a subtle shadow around the image */
+  margin: 20px 0; /* Add space above and below the image */
+  display: block; /* Ensure the image behaves as a block element */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto; /* Center the image horizontally */
+}
+
+#special-image-quote {
+  width: 60%; /* Adjust the width to 60% of the container */
+  height: auto; /* Keep the aspect ratio intact */
+  box-shadow: 0 4px 8px rgba(73, 36, 36, 0.2); /* Add a subtle shadow around the image */
+  margin: 20px 0; /* Add space above and below the image */
+  display: block; /* Ensure the image behaves as a block element */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto; /* Center the image horizontally */
+}
+
+#special-image-quote + figcaption {
+  font-size: 16px; /* Custom font size for this specific caption */
+  text-align: left; /* Align caption to the left (or you can change to center) */
+  color: #444; /* Change the text color for this caption */
+  margin-top: 15px; /* Add more space above this caption */
+  font-style: italic; /* Ensure the text is italic */
+}
+
+#special-image-quote + figcaption p {
+  font-weight: normal; /* Optional: Set normal weight for the caption text */
+  margin: 0px; /* Remove default margin */
+  margin-left: 190px;
+
+}
+
+
+
+#footnote-30 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+/* Style for the footnote links in the text */
+sup a {
+  color: rgb(255, 0, 0);
+  font-size: 10px;
+  vertical-align: super;
+  text-decoration: none;
+}
+
 
 a {
   color: var(--color-text-link);
   text-decoration: underline;
+  font-size: 20px;
 }
 
 a:hover {
@@ -73,26 +355,58 @@ a:hover {
   text-decoration: underline;
 }
 
-
-h1{
-  /* h1 style */
+h1 {
+  font-family: 'Pinyon Script', cursive;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 210px;
+  color: rgb(124, 0, 0);
+  text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
+  text-align: center;
+  margin-top: 0px;
+  position: relative;
+  transition: transform 0.4s ease-in-out, color 0.4s;
 }
+
+h1:hover {
+  transform: translateX(20px) rotate(-3deg);
+  color:rgb(255, 0, 0);
+  text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+}
+
+
+.chapter-title {
+  font-family: 'Pinyon Script', cursive;
+  font-style: normal;
+  font-size: 20px; /* Adjust size if needed */
+  margin-bottom: 40px; /* Adds space below the title */
+}
+
+
+
 
 h2{
-  /* h2 style */
+  font-family: 'Junicode', cursive;
+  font-size:80px;
+  font-weight: normal;
+  color: rgb(124, 0, 0);
 }
 
+
 h3{
-  /* h3 style */
+  color: rgb(124, 0, 0);
+  font-size:15px;
+  text-align: left; /* Align the text to the left */
+  width: 25%; /* Allow the text to break into a new line if needed */
+  padding:1rem;
+  box-sizing: border-box;
 }
 
 h4, h5, h6{
   /* h4-h5-h6 style */
 }
 
-p{
-  /* paragraph style */
-}
+
 
 ol, ul{
   /* ordered list and unordered list styles */
@@ -107,7 +421,6 @@ hr{
 }
 
 
-
 /* PAGE STYLES */
 
 /* page structure */
@@ -120,13 +433,36 @@ div.page-wrapper {
 /* navigation */
  
 nav{
-  
+  font-size: 23px; /* Adjust the value as needed */
 }
 
 /* content */
 
+.is-chapter{
+
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  box-sizing: border-box;
+  text-align: justify;
+
+}
+
+.is-chapter-text{
+  font-family: 'Junicode', sans-serif; /* Apply your custom font here */
+  width:50%;
+  text-align: justify;
+  margin-right:50px;
+}
+
+.landing-header {
+  height: 100vh;
+  
+}
+
+
 main{
- 
+
 }
 
 summary{
@@ -175,6 +511,99 @@ summary{
 
 
 
+  h1 {
+    font-size: 145px; /* Adjust size as needed */
+    transition: font-size 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.4s;
+  }
+
+  h2{
+    
+    font-size:40px;
+   
+  }
+
+  .landing-subheader {
+    margin: 0 auto;  /* Center the section on the page */
+    width: 80%;  /* Ensure the section takes up the full width */
+    text-align: center; /* Center the content inside the section */
+    padding-top: 200px;
+    height: 100vh;
+  }
+
+  .quote {
+    font-style: italic; /* Make the text italic */
+    font-size: 35px;  /* Adjust font size if needed */
+    color: #710303;  /* Adjust the color of the quote text */
+    text-align: center;  /* Center the quote */
+    line-height: 1.2;
+    padding-top: 600px; /* Adjust the value to move the quote down */
+    transition: all 0.3s ease-in-out;
+  }
+
+  #special-image-quote {
+    width: 90%; /* Adjust to take up more space on mobile */
+  }
+
+  /* Ensure the caption is centered on mobile as well */
+  #special-image-quote + figcaption {
+    text-align: center;
+  }
+
+  /* Remove any unnecessary margins for mobile */
+  #special-image-quote + figcaption p {
+    margin-left: 0; /* Ensure there's no left margin */
+  }
+
+  #chapter-3 {
+    color: #710303;
+    font-family: 'Pinyon Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: -20px;
+    margin-top: 100px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.2;
+    white-space: nowrap;  /* Prevent line breaks */
+  }
+  
+  
+  #chapter-3:hover {
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+  }
+
+h3 {
+  width: 100%; /* Full width to prevent wrapping */
+  font-size: 15px; /* Keep the font readable */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow text if necessary */
+  text-overflow: ellipsis; /* Add "..." if text is too long */
+}
+
+section.is-chapter{
+  width:100%;
+  padding-right:0%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+div.is-chapter-text{
+  width:100%;
+}
+
+figure{
+  width:100%;
+  float:left;
+  margin:0;
+}
+
+figure img{
+  margin:0;
+}
+
+
+
   /* utility classes, mobile */
 
   .desktop-only{
@@ -216,5 +645,7 @@ summary{
   /* your overriding css properties here */
 
 }
+
+
 
 
