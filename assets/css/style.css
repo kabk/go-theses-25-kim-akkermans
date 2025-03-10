@@ -183,7 +183,7 @@ header{
 }
 
 .top-right-nav a {
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   text-decoration: none; /* Remove underline */
   color: #710303; /* Change link color */
   font-size: 15px; /* Adjust font size */
@@ -222,7 +222,7 @@ body {
 
 p {
   color: rgb(124, 0, 0);
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
   text-align: left; /* Make sure text aligns left within the paragraph */
@@ -290,7 +290,7 @@ figcaption a {
 
 p {
   color: rgb(124, 0, 0);
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
   text-align: left; /* Make sure text aligns left within the paragraph */
@@ -321,7 +321,7 @@ p {
 }
 
 #special-image-quote + figcaption {
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-size: 16px; /* Custom font size for this specific caption */
   text-align: left; /* Align caption to the left (or you can change to center) */
   color: #444; /* Change the text color for this caption */
@@ -330,7 +330,7 @@ p {
 }
 
 #special-image-quote + figcaption p {
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-weight: normal; /* Optional: Set normal weight for the caption text */
   margin: 0px; /* Remove default margin */
   margin-left: 190px;
@@ -366,11 +366,11 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Graziela', cursive, sans-serif;
+  font-family: 'Graziela', italic, sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 210px;
-  color: rgb(124, 0, 0);
+  color: rgb(255, 6, 189);
   text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
   text-align: center;
   margin-top: 0px;
@@ -386,7 +386,7 @@ h1:hover {
 
 
 .chapter-title {
-  font-family: 'Aston', cursive;
+  font-family: 'Aston', italic;
   font-style: normal;
   font-size: 20px; /* Adjust size if needed */
   margin-bottom: 40px; /* Adds space below the title */
@@ -396,7 +396,7 @@ h1:hover {
 
 
 h2{
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-size:80px;
   font-weight: normal;
   color: rgb(124, 0, 0);
@@ -404,6 +404,7 @@ h2{
 
 
 h3{
+  font-family: 'Junicode', italic;
   color: rgb(124, 0, 0);
   font-size:15px;
   text-align: left; /* Align the text to the left */
@@ -520,11 +521,11 @@ summary{
   /* your 'mobile' overriding css properties here */
 
   h1 {
-    font-family: 'Aston', cursive;
+    font-family: 'Aston', italic;
     font-style: normal;
     font-weight: 100;
     font-size: 140px;
-    color: rgb(124, 0, 0);
+    color: rgb(183, 0, 255);
     text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
     text-align: center;
     margin-top: 0px;
@@ -539,7 +540,7 @@ summary{
   }
 
   h2{
-    font-family: 'Junicode', cursive;
+    font-family: 'Junicode', italic;
   font-size:40px;
   font-weight: normal;
   color: rgb(124, 0, 0);
@@ -554,7 +555,7 @@ summary{
   }
 
   .quote {
-    font-family: 'Junicode', cursive;
+    font-family: 'Junicode', italic;
     font-style: italic; /* Make the text italic */
     font-size: 35px;  /* Adjust font size if needed */
     color: #710303;  /* Adjust the color of the quote text */
@@ -582,7 +583,7 @@ summary{
 figcaption p, 
 figcaption em, 
 figcaption a {
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   font-size: 12px; 
   width:90%;
   text-align: justify;
@@ -590,7 +591,7 @@ figcaption a {
 }
 
 .top-right-nav a {
-  font-family: 'Junicode', cursive;
+  font-family: 'Junicode', italic;
   text-decoration: none; /* Remove underline */
   color: #710303; /* Change link color */
   font-size: 15px; /* Adjust font size */
@@ -623,7 +624,7 @@ details[open] summary::before {
 
   #chapter-3 {
     color: #710303;
-    font-family: 'Aston', cursive;
+    font-family: 'Aston', italic;
     font-style: normal;
     font-weight: normal;
     margin-left: -20px;
@@ -641,6 +642,7 @@ details[open] summary::before {
   }
 
 h3 {
+  font-family: 'Junicode', italic;
   width: 100%; /* Full width to prevent wrapping */
   font-size: 15px; /* Keep the font readable */
   white-space: nowrap; /* Prevent line breaks */
