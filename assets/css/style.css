@@ -108,8 +108,7 @@ header{
 #chapter-3 {
   visibility: hidden;
   color: #710303;
-  font-family: 'Pinyon Script', cursive;
-  font-style: normal;
+    font-style: normal;
   font-weight: normal;
   margin-left: -20px;
   margin-right: 10px;
