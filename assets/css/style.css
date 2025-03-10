@@ -91,7 +91,7 @@ header{
   margin-left: -20px; /* Adjust the value as necessary */
   clear: both; /* Ensures the title breaks cleanly above the text */
   text-align: left; /* Ensures the title aligns to the left */
-  font-size: 15px; /* You can adjust the size as needed */
+  font-size: 12px; /* You can adjust the size as needed */
   font-weight: bold; /* Optional, if you want the title to stand out more */
   line-height: 1.5; /* Adjust line height for readability */
   word-break: break-word; /* Break words if they're too long */
@@ -101,7 +101,7 @@ header{
   margin-left: -20px; /* Adjust the value as necessary */
   clear: both; /* Ensures the title breaks cleanly above the text */
   text-align: left; /* Ensures the title aligns to the left */
-  font-size: 15px; /* You can adjust the size as needed */
+  font-size: 12px; /* You can adjust the size as needed */
   font-weight: bold; /* Optional, if you want the title to stand out more */
   line-height: 1.5; /* Adjust line height for readability */
   word-break: break-word; /* Break words if they're too long */
@@ -129,12 +129,13 @@ header{
   color: #710303;  /* Adjust the color of the quote text */
   text-align: center;  /* Center the quote */
   line-height: 1.2;
-  padding-top: 600px; /* Adjust the value to move the quote down */
+  padding-top: 100px; /* Adjust the value to move the quote down */
   transition: all 0.3s ease-in-out;
 }
+
 .quote small {
   font-style: normal; /* Make the text italic */
-  font-size: 20px; /* Makes it 80% of normal text size */
+  font-size: 15px; /* Makes it 80% of normal text size */
 }
 
 
@@ -144,7 +145,7 @@ header{
   margin: 0 auto;  /* Center the section on the page */
   width:70%;  /* Ensure the section takes up the full width */
   text-align: center; /* Center the content inside the section */
-  height: 240vh;
+  height: 180vh;
 }
 
 .top-text {
@@ -188,7 +189,9 @@ header{
 }
 
 .top-right-nav a {
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   text-decoration: none; /* Remove underline */
   color: #710303; /* Change link color */
   font-size: 15px; /* Adjust font size */
@@ -205,12 +208,14 @@ header{
   max-width: 300px; /* Maximum width */
   height: auto; /* Maintain aspect ratio */
   float: left; /* Make the image float to the left */
-  margin-right: 15px; /* Add some space to the right of the image */
+  margin-right: 12px; /* Add some space to the right of the image */
   margin-bottom: 10px; /* Add some space below the image */
 }
 
 body {
-  font-family: 'Junicode';
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   position: relative;
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
@@ -228,7 +233,9 @@ body {
 
 p {
   color: #710303;
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
   text-align: left; /* Make sure text aligns left within the paragraph */
@@ -237,9 +244,12 @@ p {
 }
 
 summary {
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-weight: bold;
   color: #710303;
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
   width: 25%;
   padding: 1rem;
@@ -299,7 +309,9 @@ figcaption a {
 
 p {
   color: #710303;
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
   text-align: left; /* Make sure text aligns left within the paragraph */
@@ -334,16 +346,20 @@ p {
 }
 
 #special-image-quote + figcaption {
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-size: 16px; /* Custom font size for this specific caption */
   text-align: left; /* Align caption to the left (or you can change to center) */
   color: #710303; /* Change the text color for this caption */
-  margin-top: 15px; /* Add more space above this caption */
+  margin-top: 12px; /* Add more space above this caption */
   font-style: italic; /* Ensure the text is italic */
 }
 
 #special-image-quote + figcaption p {
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-weight: normal; /* Optional: Set normal weight for the caption text */
   margin: 0px; /* Remove default margin */
   margin-left: 190px;
@@ -379,14 +395,15 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Fungal';
-  font-weight: 400; /* Try using 400 (regular) or lighter weight */
-  color: #710303;
-  font-size: 220px;
-  text-align: center;
-  margin-top: 30px;
-  position: relative;
-  transition: transform 0.4s ease-in-out, color 0.4s;
+  line-height: 12rem;
+  font-family: "oddity-script", sans-serif;
+font-weight: 300;
+font-style: normal;
+    font-size: 320px;
+    text-align: center;
+    margin-top: -70px;
+    position: relative;
+    transition: transform 0.4s ease-in-out, color 0.4s;
 }
 
 
@@ -399,13 +416,15 @@ h1:hover {
 .chapter-title {
   font-family: 'Aston', italic;
   font-style: normal;
-  font-size: 20px; /* Adjust size if needed */
+  font-size: 12px; /* Adjust size if needed */
   margin-bottom: 40px; /* Adds space below the title */
 }
 
 
 h2{
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
   font-size:80px;
   font-weight: normal;
   color: rgb(124, 0, 0);
@@ -413,9 +432,12 @@ h2{
 
 
 h3{
-  font-family: 'Junicode', italic;
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
+font-weight: bold; /* Optional, if you want the title to stand out more */
   color: rgb(124, 0, 0);
-  font-size:15px;
+  font-size:12px;
   text-align: left; /* Align the text to the left */
   width: 25%; /* Allow the text to break into a new line if needed */
   padding:1rem;
@@ -469,7 +491,9 @@ nav{
 }
 
 .is-chapter-text{
-  font-family: 'Junicode', sans-serif; /* Apply your custom font here */
+  font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal; /* Apply your custom font here */
   width:50%;
   text-align: justify;
   margin-right:50px;
@@ -610,7 +634,9 @@ font-style: normal;
   }
   
   h2 {
-    font-family: 'Junicode', italic;
+    font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
     width: 100%;
     font-size: 20px;
     font-weight: normal;
@@ -626,9 +652,11 @@ font-style: normal;
   }
 
   .quote {
-    font-family: 'Junicode', italic;
+    font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
     font-style: italic;
-    font-size: 30px;
+    font-size: 20px;
     color: #710303;
     text-align: center;
     line-height: 1.2;
@@ -638,7 +666,7 @@ font-style: normal;
 
   .quote small {
     font-style: normal; /* Make the text italic */
-    font-size: 12px; /* Makes it 80% of normal text size */
+    font-size: 15px; /* Makes it 80% of normal text size */
   }
 
   #special-image-quote {
@@ -657,14 +685,18 @@ font-style: normal;
   figcaption p,
   figcaption em,
   figcaption a {
-    font-family: 'Junicode', italic;
+    font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
     font-size: 12px;
     width: 90%;
     text-align: justify;
   }
 
   .top-right-nav a {
-    font-family: 'Junicode', italic;
+    font-family: "itc-galliard", serif;
+font-weight: 400;
+font-style: normal;
     text-decoration: none;
     color: #710303;
     font-size: 15px;
@@ -673,7 +705,7 @@ font-style: normal;
   summary {
     font-weight: bold;
     color: #710303;
-    font-size: 15px;
+    font-size: 12px;
     text-align: left;
     width: 25%;
     padding: 1rem;
@@ -697,7 +729,7 @@ font-style: normal;
   #chapter-1 {
     margin-left: -20px; /* Adjust the value as necessary */
     clear: both; /* Ensures the title breaks cleanly above the text */
-    text-align: left; /* Ensures the title aligns to the left */
+    text-align: center; /* Ensures the title aligns to the left */
     font-size: 12px; /* You can adjust the size as needed */
     font-weight: bold; /* Optional, if you want the title to stand out more */
     line-height: 1.5; /* Adjust line height for readability */
@@ -707,7 +739,7 @@ font-style: normal;
   #chapter-2 {
     margin-left: -20px; /* Adjust the value as necessary */
     clear: both; /* Ensures the title breaks cleanly above the text */
-    text-align: left; /* Ensures the title aligns to the left */
+    text-align: center; /* Ensures the title aligns to the left */
     font-size: 12px; /* You can adjust the size as needed */
     font-weight: bold; /* Optional, if you want the title to stand out more */
     line-height: 1.5; /* Adjust line height for readability */
@@ -722,7 +754,7 @@ font-style: normal;
     margin-left: -20px;
     margin-right: 10px;
     margin-top: 500px;  /* Adjust this value to move the title down */
-    text-align: left;
+    text-align: center;
     font-size: 12px;
     line-height: 1.2;
   }
@@ -734,12 +766,17 @@ font-style: normal;
   }
 
   h3 {
-    font-family: 'Junicode', italic;
+    font-weight: bold; /* Optional, if you want the title to stand out more */
+  color: rgb(124, 0, 0);
+  font-size:12px;
+    font-family: "itc-galliard", serif;
+font-style: normal;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align:center;
   }
 
   section.is-chapter {
