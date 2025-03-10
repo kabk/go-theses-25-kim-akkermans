@@ -164,7 +164,7 @@ header{
 }
 
 .top-right-nav {
-  
+
   top: 0;
   left: 0; /* Positions it at the left edge */
   width: 250px;
@@ -187,6 +187,7 @@ header{
 }
 
 .top-right-nav a {
+  font-family: 'Junicode', cursive;
   text-decoration: none; /* Remove underline */
   color: #710303; /* Change link color */
   font-size: 15px; /* Adjust font size */
@@ -290,6 +291,16 @@ figcaption a {
 
 }
 
+p {
+  color: rgb(124, 0, 0);
+  font-family: 'Junicode', cursive;
+  font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
+  line-height: 1.4; /* Optionally adjust line spacing for readability */
+  text-align: left; /* Make sure text aligns left within the paragraph */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #special-image {
   width: 100%; /* Adjust the width to 100% of the container */
   height: auto; /* Keep the aspect ratio intact */
@@ -313,6 +324,7 @@ figcaption a {
 }
 
 #special-image-quote + figcaption {
+  font-family: 'Junicode', cursive;
   font-size: 16px; /* Custom font size for this specific caption */
   text-align: left; /* Align caption to the left (or you can change to center) */
   color: #444; /* Change the text color for this caption */
@@ -321,6 +333,7 @@ figcaption a {
 }
 
 #special-image-quote + figcaption p {
+  font-family: 'Junicode', cursive;
   font-weight: normal; /* Optional: Set normal weight for the caption text */
   margin: 0px; /* Remove default margin */
   margin-left: 190px;
@@ -509,17 +522,30 @@ summary{
 
   /* your 'mobile' overriding css properties here */
 
-
-
   h1 {
-    font-size: 145px; /* Adjust size as needed */
-    transition: font-size 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.4s;
+    font-family: 'Pinyon Script', cursive;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 140px;
+    color: rgb(124, 0, 0);
+    text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+    transition: transform 0.4s ease-in-out, color 0.4s;
+  }
+  
+  h1:hover {
+    transform: translateX(20px) rotate(-3deg);
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
   }
 
   h2{
-    
-    font-size:40px;
-   
+    font-family: 'Junicode', cursive;
+  font-size:40px;
+  font-weight: normal;
+  color: rgb(124, 0, 0);
   }
 
   .landing-subheader {
@@ -531,6 +557,7 @@ summary{
   }
 
   .quote {
+    font-family: 'Junicode', cursive;
     font-style: italic; /* Make the text italic */
     font-size: 35px;  /* Adjust font size if needed */
     color: #710303;  /* Adjust the color of the quote text */
@@ -553,6 +580,49 @@ summary{
   #special-image-quote + figcaption p {
     margin-left: 0; /* Ensure there's no left margin */
   }
+
+  figcaption, 
+figcaption p, 
+figcaption em, 
+figcaption a {
+  font-family: 'Junicode', cursive;
+  font-size: 12px; 
+  width:90%;
+  text-align: justify;
+
+}
+
+.top-right-nav a {
+  font-family: 'Junicode', cursive;
+  text-decoration: none; /* Remove underline */
+  color: #710303; /* Change link color */
+  font-size: 15px; /* Adjust font size */
+}
+
+summary {
+  font-weight: bold;
+  color: rgb(124, 0, 0);
+  font-size: 15px;
+  text-align: left;
+  width: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+  
+  /* Hide the default arrow */
+  list-style: none;
+  padding-left: 20px; /* Optional: Space for the finger symbol */
+}
+
+summary::before {
+  content: "☞"; /* Unicode for pointing finger */
+  margin-right: 10px; /* Space between the symbol and text */
+  font-size: 20px; /* Adjust the symbol size */
+}
+
+/* When the details are open, you can change it to another finger or symbol */
+details[open] summary::before {
+  content: "☟"; /* Another finger pointing upwards */
+}
 
   #chapter-3 {
     color: #710303;
