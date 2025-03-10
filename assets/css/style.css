@@ -604,8 +604,8 @@ summary{
   
   h2 {
     font-family: 'Junicode', italic;
-    width: 110%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 20px;
     font-weight: normal;
     color: rgb(124, 0, 0);
   }
@@ -621,12 +621,17 @@ summary{
   .quote {
     font-family: 'Junicode', italic;
     font-style: italic;
-    font-size: 35px;
+    font-size: 30px;
     color: #710303;
     text-align: center;
     line-height: 1.2;
     padding-top: 600px;
     transition: all 0.3s ease-in-out;
+  }
+
+  .quote small {
+    font-style: normal; /* Make the text italic */
+    font-size: 12px; /* Makes it 80% of normal text size */
   }
 
   #special-image-quote {
@@ -638,7 +643,7 @@ summary{
   }
 
   #special-image-quote + figcaption p {
-    margin-left: 0;
+    margin-left: 12px;
   }
 
   figcaption,
