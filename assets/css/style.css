@@ -529,14 +529,21 @@ summary{
 
   /* your 'mobile' overriding css properties here */
 
+  
+/* Mobile-specific h1 styling */
+@media (max-width: 779px) {
+
   h1 {
-    
-      font-size: 130px; /* Even smaller font size */
-      margin-left: -40px; /* Ensure margin-left is reset */
-      margin-top: 10px; /* Adjust top margin for mobile */
+    font-size: 45px; /* Example smaller font size for mobile */
+    margin-left: -40px; /* Adjust margin for mobile */
+    margin-top: 10px; /* Adjust top margin */
     transition: transform 0.4s ease-in-out, color 0.4s;
   }
-  
+}
+  html, body {
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  overflow-y: auto;    /* Allow vertical scrolling */
+}
   h1:hover {
     transform: translateX(20px) rotate(-3deg);
     color:rgb(255, 0, 0);
