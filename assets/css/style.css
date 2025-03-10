@@ -21,12 +21,11 @@
 }
 
 @font-face {
-  font-family: 'Graziela';
-  src: url('assets/fonts/la_graziela/LaGrazielaDemo.woff2') format('woff2'),
-       url('assets/fonts/la_graziela/LaGrazielaDemo.woff') format('woff');
+  font-family: 'Fungal';
+  src: url('assets/fonts/fungal/Fungal-Grow100Thickness500.woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 
@@ -38,8 +37,8 @@
   /* Color values */
   --color-background: rgba(255, 255, 255, 1); /* Background color */
   --color-text: rgba(0, 0, 0, 1); /* Text color */
-  --color-text-link: rgba(113, 83, 83, 1); /* Text color for links */
-  --color-text-link-hover: rgb(149, 0, 0); /* Hover color for links */
+  --color-text-link: #710303; /* Text color for links */
+  --color-text-link-hover: #1d0371; /* Hover color for links */
 
   /* Font values */
   --font-text: 'Junicode'; /* Set your desired font family here */
@@ -63,10 +62,12 @@ html {
 }
 
 header{
+  z-index: 1;
   position:relative;
   display:block;
   width:100%;
   height:auto;
+  
 }
 
 .landing-content{
@@ -83,6 +84,7 @@ header{
   text-align: center; /* Center the content inside the section */
   padding-top: 200px;
   height: 100vh;
+  
 }
 
 #chapter-1 {
@@ -130,6 +132,10 @@ header{
   padding-top: 600px; /* Adjust the value to move the quote down */
   transition: all 0.3s ease-in-out;
 }
+.quote small {
+  font-style: normal; /* Make the text italic */
+  font-size: 20px; /* Makes it 80% of normal text size */
+}
 
 
 
@@ -138,7 +144,7 @@ header{
   margin: 0 auto;  /* Center the section on the page */
   width:70%;  /* Ensure the section takes up the full width */
   text-align: center; /* Center the content inside the section */
-  height: 270vh;
+  height: 240vh;
 }
 
 .top-text {
@@ -160,15 +166,14 @@ header{
 }
 
 .top-right-nav {
-
-  top: 0;
+  position: sticky; /* Make it sticky */
+  top: 0; /* Stick to the top of the viewport */
   left: 0; /* Positions it at the left edge */
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  width: 230px;
   text-align: left;
-
-} 
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: #fff; /* Optionally, add a background color */
+}
 
 .top-right-nav ul {
   list-style-type: none; /* Remove default bullet points */
@@ -194,6 +199,7 @@ header{
   text-decoration: none; /* Remove underline */
 }
 
+
 .styled-image {
   width: 50%; /* Make the image take up 50% of its container */
   max-width: 300px; /* Maximum width */
@@ -205,23 +211,23 @@ header{
 
 body {
   font-family: 'Junicode';
-  position:relative;
+  position: relative;
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
-  color: rgb(113, 83, 83);
-  width:100%;
-  height:auto;
-  overflow-y:auto;
+  color: #710303;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
   margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-    cursor: url('assets/images/BDM-singing.png'), auto;
-   
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url('assets/images/BDM-singing.png'), auto;
 
 }
 
+
 p {
-  color: rgb(124, 0, 0);
+  color: #710303;
   font-family: 'Junicode', italic;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
@@ -232,7 +238,7 @@ p {
 
 summary {
   font-weight: bold;
-  color: rgb(124, 0, 0);
+  color: #710303;
   font-size: 15px;
   text-align: left;
   width: 25%;
@@ -255,7 +261,6 @@ details[open] summary::before {
   content: "☟"; /* Another finger pointing upwards */
 }
 
-
 figure {
   position: relative;
   float: right;
@@ -263,7 +268,7 @@ figure {
   margin: 0;
   padding: 0;
   margin-right: -30vw;
-  margin-top: -10px;  /* Move the figure (and image) up */
+  margin-top: -10px;
 }
 
 figure img {
@@ -272,11 +277,15 @@ figure img {
   margin: 0;
   padding: 0;
   max-width: none;
-  margin-top: -250px;  /* Move the image up */
-  object-fit: cover; /* Ensures the image covers the full area without distortion */
+  margin-top: -250px;
+  object-fit: cover;
+  filter: contrast(100%) sepia(100%) hue-rotate(300deg) saturate(70%) brightness(110%); /* Creates a reddish tint */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
 }
 
-
+figure img:hover {
+  filter: none;
+}
 
 figcaption, 
 figcaption p, 
@@ -289,7 +298,7 @@ figcaption a {
 }
 
 p {
-  color: rgb(124, 0, 0);
+  color: #710303;
   font-family: 'Junicode', italic;
   font-size: 16px; /* Adjust to a smaller size (relative to parent font size) */
   line-height: 1.4; /* Optionally adjust line spacing for readability */
@@ -301,18 +310,22 @@ p {
 #special-image {
   width: 100%; /* Adjust the width to 100% of the container */
   height: auto; /* Keep the aspect ratio intact */
-  box-shadow: 0 4px 8px rgba(73, 36, 36, 0.2); /* Add a subtle shadow around the image */
   margin: 20px 0; /* Add space above and below the image */
   display: block; /* Ensure the image behaves as a block element */
   object-fit: cover; /* Ensure the image covers the space without distortion */
   margin-left: auto; /* Center the image horizontally */
   margin-right: auto; /* Center the image horizontally */
+  filter: contrast(100%) sepia(100%) hue-rotate(300deg) saturate(70%) brightness(110%);
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#special-image:hover {
+  filter: none;
 }
 
 #special-image-quote {
   width: 60%; /* Adjust the width to 60% of the container */
   height: auto; /* Keep the aspect ratio intact */
-  box-shadow: 0 4px 8px rgba(73, 36, 36, 0.2); /* Add a subtle shadow around the image */
   margin: 20px 0; /* Add space above and below the image */
   display: block; /* Ensure the image behaves as a block element */
   object-fit: cover; /* Ensure the image covers the space without distortion */
@@ -324,7 +337,7 @@ p {
   font-family: 'Junicode', italic;
   font-size: 16px; /* Custom font size for this specific caption */
   text-align: left; /* Align caption to the left (or you can change to center) */
-  color: #444; /* Change the text color for this caption */
+  color: #710303; /* Change the text color for this caption */
   margin-top: 15px; /* Add more space above this caption */
   font-style: italic; /* Ensure the text is italic */
 }
@@ -366,22 +379,20 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Graziela', italic, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 210px;
-  color: rgb(255, 6, 189);
-  text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
+  font-family: 'Fungal';
+  font-weight: normal; /* Ensures no extra thickness */
+  color: #710303;
+  font-size: 220px;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 30px;
   position: relative;
   transition: transform 0.4s ease-in-out, color 0.4s;
 }
 
+
 h1:hover {
   transform: translateX(20px) rotate(-3deg);
   color:rgb(255, 0, 0);
-  text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
 }
 
 
@@ -391,8 +402,6 @@ h1:hover {
   font-size: 20px; /* Adjust size if needed */
   margin-bottom: 40px; /* Adds space below the title */
 }
-
-
 
 
 h2{
@@ -521,27 +530,22 @@ summary{
   /* your 'mobile' overriding css properties here */
 
   h1 {
-    font-family: 'Aston', italic;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 140px;
-    color: rgb(183, 0, 255);
-    text-shadow: 2px 2px 10px rgba(78, 9, 9, 0.5);
-    text-align: center;
-    margin-top: 0px;
-    position: relative;
+    
+      font-size: 130px; /* Even smaller font size */
+      margin-left: -40px; /* Ensure margin-left is reset */
+      margin-top: 10px; /* Adjust top margin for mobile */
     transition: transform 0.4s ease-in-out, color 0.4s;
   }
   
   h1:hover {
     transform: translateX(20px) rotate(-3deg);
     color:rgb(255, 0, 0);
-    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
   }
-
+  
   h2{
-    font-family: 'Junicode', italic;
-  font-size:40px;
+  font-family: 'Junicode', italic;
+  width:110%;
+  font-size:30px;
   font-weight: normal;
   color: rgb(124, 0, 0);
   }
@@ -669,6 +673,10 @@ figure{
 
 figure img{
   margin:0;
+}
+
+figure img:hover {
+  filter: none;
 }
 
 
