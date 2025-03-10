@@ -697,7 +697,7 @@ font-style: normal;
   .top-right-nav {
     position: sticky; /* Make it sticky */
     top: 0px; /* Stick to the top of the viewport */
-    left: 115px; /* Positions it at the left edge */
+    left: 90px; /* Positions it at the left edge */
     width: 230px;
     text-align: center;
     z-index: 1000; /* Ensure the navbar is above other content */
@@ -710,7 +710,7 @@ font-weight: 400;
 font-style: normal;
     text-decoration: none;
     color: #710303;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .quote-section {
